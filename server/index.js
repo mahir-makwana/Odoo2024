@@ -6,7 +6,7 @@ const router = require("./router/index");
 const cors = require("cors");
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: process.env.ClIENT_URL,
   methods: "GET,POST,PUT,PATCH,DELETE,OPTIONS,HEAD",
   credentials: true,
 };
